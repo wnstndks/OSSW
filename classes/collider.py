@@ -72,4 +72,4 @@ class Collider:
         if self.entity.rect.x < 0:
             self.entity.rect.x = 0
             self.entity.vel.x = 0
-            return True
+            return Truez
