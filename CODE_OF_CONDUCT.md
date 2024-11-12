@@ -1,4 +1,4 @@
-A Code of Conduct for Open Source Communities
+# A Code of Conduct for Open Source Communities
 
 ## Github & Our Pledge
 
