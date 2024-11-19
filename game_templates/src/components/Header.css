@@ -1,0 +1,35 @@
+.header {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  display: grid; /* Flexbox 대신 Grid 사용 */
+  grid-template-columns: 2fr 1fr 0.5fr; /* 3등분 */
+  align-items: center; /* 세로 정렬 */
+}
+
+.header h1 {
+  text-align: center; /* h1 텍스트를 가운데 정렬 */
+  margin: 0; /* 기본 마진 제거 */
+}
+
+.header nav {
+  justify-self: right; /* nav를 가운데 정렬 */
+}
+
+.header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0; /* 기본 마진 제거 */
+  padding: 0; /* 기본 패딩 제거 */
+}
+
+.header nav ul a {
+  color: white;
+  text-decoration: none;
+}
+
+/* 마지막 빈 공간을 위한 스타일 */
+.header .placeholder {
+  justify-self: end; /* 오른쪽 끝에 배치 */
+}
