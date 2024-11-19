@@ -1,4 +1,4 @@
-import './Footer.css'; // 스타일을 따로 관리하고 싶다면 CSS 파일 추가
+import './Footer.css';
 
 function Footer() {
   return (
