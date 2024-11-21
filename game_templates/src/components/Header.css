@@ -1,35 +1,44 @@
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .header nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
   background-color: #333;
   color: white;
-  padding: 10px 20px;
-  display: grid; /* Flexbox 대신 Grid 사용 */
-  grid-template-columns: 2fr 1fr 0.5fr; /* 3등분 */
-  align-items: center; /* 세로 정렬 */
 }
 
 .header h1 {
-  text-align: center; /* h1 텍스트를 가운데 정렬 */
-  margin: 0; /* 기본 마진 제거 */
-}
-
-.header nav {
-  justify-self: right; /* nav를 가운데 정렬 */
+  font-size: 1.8rem;
 }
 
 .header nav ul {
   list-style: none;
   display: flex;
-  gap: 15px;
-  margin: 0; /* 기본 마진 제거 */
-  padding: 0; /* 기본 패딩 제거 */
+  gap: 20px;
+  margin: 0;
+  padding: 0;
 }
 
-.header nav ul a {
+.header nav ul li a {
   color: white;
   text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
 }
 
-/* 마지막 빈 공간을 위한 스타일 */
-.header .placeholder {
-  justify-self: end; /* 오른쪽 끝에 배치 */
+.header nav ul li a:hover {
+  color: #ffcc00;
 }
+

@@ -1,4 +1,5 @@
-import './Header.css'; // 스타일을 따로 관리하고 싶다면 CSS 파일 추가
+import './Header.css'; 
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
@@ -6,9 +7,9 @@ function Header() {
       <h1>MARIO UNLEASHED</h1>
       <nav>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
         </ul>
       </nav>
     </header>
