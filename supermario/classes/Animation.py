@@ -21,4 +21,4 @@ class Animation:
         self.image = self.idleSprite
 
     def inAir(self):
-        self.image = self.airSprite 
+        self.image = self.airSprite

@@ -3,7 +3,7 @@ import pygame
 from classes.Font import Font
 
 
-class Dashboard(Font): 
+class Dashboard(Font):
     def __init__(self, filePath, size, screen):
         Font.__init__(self, filePath, size)
         self.state = "menu"

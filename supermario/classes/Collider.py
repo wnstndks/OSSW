@@ -8,7 +8,7 @@ class Collider:
     def checkX(self):
         if self.leftLevelBorderReached() or self.rightLevelBorderReached():
             return
-        try: 
+        try:
             rows = [
                 self.level[self.entity.getPosIndex().y],
                 self.level[self.entity.getPosIndex().y + 1],
@@ -72,4 +72,4 @@ class Collider:
         if self.entity.rect.x < 0:
             self.entity.rect.x = 0
             self.entity.vel.x = 0
-            return Truez
+            return True
