@@ -3,8 +3,6 @@ version: 2
 sphinx:
   configuration: docs/conf.py  # Sphinx 설정 파일 경로
 
-python:
-  version: "3.12"  # 사용하고자 하는 Python 버전, 문자열로 작성
 
 build:
   os: ubuntu-22.04  # Ubuntu 22.04 운영체제 설정
