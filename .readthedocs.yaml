@@ -9,5 +9,5 @@ python:
 build:
   os: ubuntu-22.04  # Ubuntu 22.04 운영체제 설정
   tools:
-    python: "3.12"  # Python 버전 설정
+    python: "3.12.1"  # Python 버전 설정
   
