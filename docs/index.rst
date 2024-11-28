@@ -1,9 +1,7 @@
 Welcome to OSSW's documentation!
 ================================
-Contents:
-
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Contents:
 
    about.rst
@@ -21,5 +19,4 @@ Indices and tables
 ==================
 
 * :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
