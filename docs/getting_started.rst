@@ -1,0 +1,1 @@
+Basically, use python and proceed using pygame module
