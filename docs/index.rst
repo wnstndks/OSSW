@@ -1,8 +1,3 @@
-.. OSSW documentation master file, created by
-   sphinx-quickstart on Thu Nov 28 21:27:53 2024.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 Welcome to OSSW's documentation!
 ================================
 
@@ -10,7 +5,16 @@ Welcome to OSSW's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-
+   about
+   getting_started
+   usage
+   technical_overview
+   api_reference
+   configuration_guide
+   maintenance_troubleshooting
+   contribution_guidelines
+   faq
+   release_notes
 
 Indices and tables
 ==================
