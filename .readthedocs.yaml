@@ -1,8 +1,12 @@
-# .readthedocs.yaml
 version: 2
 
 sphinx:
-  configurationnx 프로젝트의 설정 파일 경로: docs/conf.py  # Sphi (보통 docs/conf.py 위치)
-  
+  configuration: docs/conf.py  # Sphinx 설정 파일 경로
+
 python:
-  version: 3.11.1  # 사용하고자 하는 Python 버전 (필요시 수정)
+  version: 3.11  # 사용하고자 하는 Python 버전
+
+build:
+  image: 'readthedocs/sphinx-build'  # ReadTheDocs에서 제공하는 빌드 이미지
+  tools:
+    - sphinx  # Sphinx를 빌드 도구로 설정
