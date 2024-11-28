@@ -2,7 +2,7 @@
 version: 2
 
 sphinx:
-  configurationnx 프로젝트의 설정 파일 경로: docs/conf.py  # Sphi (보통 docs/conf.py 위치)
+  configuration: docs/conf.py 
   
 python:
-  version: 3.11.1  # 사용하고자 하는 Python 버전 (필요시 수정)
+  version: 3.11.1
