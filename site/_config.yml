@@ -1,6 +1,6 @@
 # Configurations
-title:            OSSW
-longtitle:        MARIO UNLEASHED
+title:            Jekyll Gitbook
+longtitle:        Jekyll Gitbook
 author:           HE Tao
 email:            sighingnow@gmail.com
 description: >
@@ -9,12 +9,16 @@ description: >
 version:          1.0
 gitbook_version:  3.2.3
 
-url:              'https://wnstndks.github.io'
-baseurl:          '/OSSW'
+url:              'https://sighingnow.github.io'
 rss:              RSS
 
 # bootstrap: use the remote theme for the site itself
 remote_theme: sighingnow/jekyll-gitbook
+include:
+  - _layouts
+  - _includes
+  - assets
+  - pages
 
 toc:
   enabled: true
@@ -72,3 +76,4 @@ plugins:
   - jekyll-feed
   - jekyll-readme-index
   - jemoji
+  - jekyll-remote-theme
