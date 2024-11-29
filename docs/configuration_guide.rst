@@ -1,1 +1,1 @@
-This project features custom levels, interactive enemies, and a variety of power-ups, designed to challenge players in new and exciting ways
+Users can stop the game in the middle, adjust the sound, and set the character
