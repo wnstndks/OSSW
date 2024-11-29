@@ -2,16 +2,19 @@ Usage
 ----
 
 
+
 Running
 ========
 * $ pip install -r requirements.txt
 * $ python main.py
 
 
+
 Standalone windows build
 ========
 * $ pip install py2exe
 * $ python compile.py py2exe
+
 
 
 Controls
