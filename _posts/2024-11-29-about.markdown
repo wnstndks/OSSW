@@ -4,8 +4,46 @@ title:  "About"
 date:   2024-11-29 03:18:02 +0900
 categories: jekyll update
 ---
-This is About Page
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+## Project Overview
+
+Mario's Adventure Unleashed is an open-source platformer game developed by passionate students from Sejong University. Our project aims to breathe new life into the classic Mario gaming experience by combining nostalgic elements with fresh, innovative mechanics.
+
+## Project Origins
+
+Initiated as a 2024 Open Source Software Project, our game is the result of collaborative efforts by:
+
+- Lee Jung-han (18011007)
+- An Jun-su (19011680)
+- Lee Si-jin (22011161)
+
+Under the guidance of Professor Jamil Hussain, we've created a Python-based platformer that pushes the boundaries of traditional game design.
+
+## Technical Highlights
+
+- **Language**: Python
+- **Inspiration**: Classic Mario Games
+- **Key Features**:
+  - Custom level design
+  - Interactive enemy systems
+  - Diverse power-up mechanics
+  - Advanced character traits and mechanics
+
+### Code Snippet
+
+```python
+class Mario(EntityBase):
+    def __init__(self, x, y, level, screen, dashboard, sound, gravity=0.8):
+        super(Mario, self).__init__(x, y, gravity)
+        self.sound = sound
+        self.input = Input(self)
+        self.powerUpState = 0
+        # Advanced character traits
+        self.traits = {
+            "jumpTrait": JumpTrait(self),
+            "goTrait": GoTrait(smallAnimation, screen, self.camera, self),
+            "bounceTrait": bounceTrait(self),
+        }
+
+License
+Proudly open-source under the Apache 
