@@ -15,18 +15,17 @@ Methods:
     - `direction`: The direction to move (e.g., `"left"`, `"right"`, `"up"`, `"down"`)
   - **Return**: None
   - **Usage Example**:
-    ```python
+.. code-block:: python
     pressedKeys = pygame.key.get_pressed()
-    ```
+    
 
 - **jump()**
   - **Description**: Makes the player jump.
   - **Parameters**: None
   - **Return**: None
   - **Usage Example**:
-    ```python
+.. code-block:: python
     pressedKeys[K_SPACE]
-    ```
 
 ---
 
@@ -42,7 +41,6 @@ Methods:
   - **Description**: Automatically moves the enemy.
   - **Return**: None
   - **Usage Example**:
-    ```python
+.. code-block:: python
     self.leftrightTrait = LeftRightWalkTrait(self, level)
-    ```
 
