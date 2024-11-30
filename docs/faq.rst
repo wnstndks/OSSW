@@ -18,7 +18,7 @@ Frequently asked questions about gaming projects using pygame should be centered
 - **Q: How do I play this game?**  
     A: You can run it with the following command:
 .. code-block:: bash
-    
+
     python main.py
     
 
@@ -28,7 +28,8 @@ Frequently asked questions about gaming projects using pygame should be centered
 - **Q: How do I install pygame?**  
     A: Install pygame using the command below:
 .. code-block:: bash
-        pip install pygame
+
+    pip install pygame
     
 
 - **Q: What should I do if I get an error while running?**  
