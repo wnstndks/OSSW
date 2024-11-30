@@ -1,3 +1,5 @@
+Configuration_guide
+----
 1.	New Difficulty Levels: Customizable difficulty settings tailored to player skills.
 2.	Character Selection: Choose from unique characters with distinct abilities and traits from the classic Super Mario roster.
 3.	Variety of Items and Monsters: Addition of diverse items and monsters suitable for the Super Mario theme.
