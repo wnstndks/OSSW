@@ -16,6 +16,7 @@ Methods:
   - **Return**: None
   - **Usage Example**:
 .. code-block:: python
+    
     pressedKeys = pygame.key.get_pressed()
     
 
@@ -25,6 +26,7 @@ Methods:
   - **Return**: None
   - **Usage Example**:
 .. code-block:: python
+
     pressedKeys[K_SPACE]
 
 ---
@@ -42,5 +44,6 @@ Methods:
   - **Return**: None
   - **Usage Example**:
 .. code-block:: python
+
     self.leftrightTrait = LeftRightWalkTrait(self, level)
 
