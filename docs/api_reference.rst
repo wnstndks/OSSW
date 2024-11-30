@@ -16,7 +16,7 @@ Methods:
   - **Return**: None
   - **Usage Example**:
 .. code-block:: python
-    
+
     pressedKeys = pygame.key.get_pressed()
     
 
@@ -29,7 +29,6 @@ Methods:
 
     pressedKeys[K_SPACE]
 
----
 
 Enemy Class
 ===========
