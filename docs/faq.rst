@@ -18,9 +18,7 @@ Frequently asked questions about gaming projects using pygame should be centered
 - **Q: How do I play this game?**  
     A: You can run it with the following command:
 .. code-block:: bash
-
-        pip install pygame
-
+        python main.py
     
 
 **2. Installation and execution issues**
@@ -33,7 +31,7 @@ Frequently asked questions about gaming projects using pygame should be centered
     
 
 - **Q: What should I do if I get an error while running?**  
-    A: Check the error message and see if similar issues have been reported in the FAQ or Issue Tracker, if necessary please report the issue via [Issue page] (link).
+    A: Check the error message and see if similar issues have been reported in the FAQ or Issue Tracker, if necessary please report the issue via email.
 
 **3. Game features and usage**
 ===========
