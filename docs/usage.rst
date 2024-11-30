@@ -5,15 +5,24 @@ Usage
 
 Running
 ========
-* $ pip install -r requirements.txt
-* $ python main.py
+.. code-block:: bash
+
+    $ pip install -r requirements.txt
+
+.. code-block:: bash
+    
+    $ python main.py
 
 
 
 Standalone windows build
 ========
-* $ pip install py2exe
-* $ python compile.py py2exe
+.. code-block:: bash
+
+    $ pip install py2exe
+.. code-block:: bash
+
+    $ python compile.py py2exe
 
 
 
