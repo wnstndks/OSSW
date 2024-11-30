@@ -22,7 +22,6 @@ Methods:
 
 - **jump()**
   - **Description**: Makes the player jump.
-  - **Parameters**: None
   - **Return**: None
   - **Usage Example**:
 .. code-block:: python
