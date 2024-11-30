@@ -1,18 +1,48 @@
 API Reference
 ----
 
-1. Endpoint
+Player Class
+============
 
-2. Request
+The **Player** class manages the player's state in the game. This class handles the player's position, score, and other game-related attributes.
 
-3. Response
-    * error(404) : The requested page could not be found.
-.. code-block:: html
+Methods:
+============
 
-    <div class="container">
-        <h1>404</h1>
+- **move(direction: str)**
+  - **Description**: Moves the player in the specified direction.
+  - **Parameters**: 
+    - `direction`: The direction to move (e.g., `"left"`, `"right"`, `"up"`, `"down"`)
+  - **Return**: None
+  - **Usage Example**:
+    ```python
+    pressedKeys = pygame.key.get_pressed()
+    ```
 
-        <p><strong>Page not found :(</strong></p>
-        <p>The requested page could not be found.</p>
-    </div>
+- **jump()**
+  - **Description**: Makes the player jump.
+  - **Parameters**: None
+  - **Return**: None
+  - **Usage Example**:
+    ```python
+    pressedKeys[K_SPACE]
+    ```
+
+---
+
+Enemy Class
+===========
+
+The **Enemy** class defines the behavior of enemy characters in the game. Each enemy has attributes such as position, health, and movement style.
+
+Methods:
+--------
+
+- **move()**
+  - **Description**: Automatically moves the enemy.
+  - **Return**: None
+  - **Usage Example**:
+    ```python
+    self.leftrightTrait = LeftRightWalkTrait(self, level)
+    ```
 
