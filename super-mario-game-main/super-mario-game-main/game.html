@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperMario Unleashed Adventure</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: url('/super-mario-game-main/img/background.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        h1 {
+            font-size: 4rem;
+            color: red;
+            margin-bottom: 3rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        .characters {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+        .character {
+            cursor: pointer;
+            border: 3px solid transparent;
+            border-radius: 12px;
+            padding: 20px;
+            transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .character img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .character p {
+            margin-top: 10px;
+            font-size: 1.2rem;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        .character:hover {
+            transform: scale(1.2);
+            border-color: gold;
+            box-shadow: 0px 8px 15px rgba(255, 215, 0, 0.5);
+        }
+        .start-button {
+            background-color: red;
+            color: white;
+            padding: 20px 40px;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.8rem;
+            cursor: pointer;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+        }
+        .start-button:hover {
+            background-color: darkorange;
+            box-shadow: 0px 8px 20px rgba(255, 140, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mario’s Adventure Unleashed</h1>
+        <div class="characters">
+            <div class="character" data-character="Mario">
+                <img src="/super-mario-game-main/img/mario.webp" alt="Mario">
+                <p>Mario</p>
+            </div>
+            <div class="character" data-character="Cubi">
+                <img src="/super-mario-game-main/img/cubi.webp" alt="Cubi">
+                <p>Cubi</p>
+            </div>
+            <div class="character" data-character="Doraemong">
+                <img src="/super-mario-game-main/img/dora.webp" alt="Doraemong">
+                <p>Doraemong</p>
+            </div>
+            <div class="character" data-character="Sijin">
+                <img src="/super-mario-game-main/img/LEE.png" alt="Sijin">
+                <p>Sijin</p>
+            </div>
+        </div>
+        <button class="start-button">Start Game</button>
+    </div>
+
+    <script>
+        const characters = document.querySelectorAll('.character');
+        let selectedCharacter = null;
+
+        characters.forEach(character => {
+            character.addEventListener('click', () => {
+                characters.forEach(char => char.style.borderColor = 'transparent');
+                character.style.borderColor = 'gold';
+                selectedCharacter = character.dataset.character;
+                alert(`${selectedCharacter} selected!`);
+            });
+        });
+
+        document.querySelector('.start-button').addEventListener('click', () => {
+            if (!selectedCharacter) {
+                alert('Please select a character before starting the game!');
+                return;
+            }
+            window.location.href = '/super-mario-game-main/level.html'; // 레벨 페이지로 이동
+        });
+    </script>
+</body>
+</html>
